@@ -17,7 +17,7 @@
 
 .heading-link {
   text-align: center;
-  background-image: url("/images/heading-bg.jpg");
+  background-image: url("../images/heading-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
