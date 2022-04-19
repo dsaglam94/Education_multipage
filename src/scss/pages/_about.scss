@@ -1,0 +1,189 @@
+// .heading-link {
+//     text-align: center;
+//     background-image: url('/images/heading-bg.jpg');
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+
+//     h3 {
+//         @include titleText(4rem);
+//     }
+
+//     p {
+//         @include graphText(2rem);
+
+//         a {
+//             color: $green;
+
+//             &:hover {
+//                 text-decoration: underline;
+//             }
+//         }
+//     }
+// }
+
+.about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+ 
+    .image{
+       flex:1 1 40rem;
+ 
+       img{
+          width: 100%;
+       }
+    }
+ 
+    .content{
+       flex:1 1 40rem;
+ 
+       .about-title{
+          @include titleText(3rem);
+       }
+ 
+       p{
+          @include graphText(1.5rem);
+          padding:1rem 0;
+       }
+ 
+       .icons-container{
+          margin-top: 1rem;
+          @include grid(16rem);
+ 
+          .icons{
+             text-align: center;
+             border:$border;
+             background: $light-green;
+             padding:3rem 2rem;
+ 
+             img{
+                height: 5rem;
+                margin-bottom: .5rem;
+             }
+ 
+             h3{
+                padding:.5rem 0;
+                @include titleText(3rem);
+             }
+ 
+             span{
+                @include graphText(1.5rem);
+             }
+          }
+       }
+    }
+ }
+
+ .teachers {
+     
+    .slide {
+        text-align: center;
+        width: 30rem;
+
+        &:hover {
+
+            .image {
+
+                img { 
+                    background-color: $green;
+                }
+
+                .share {
+                    bottom: 0;
+                }
+            }
+        }
+
+        .image {
+            position: relative;
+            overflow: hidden;
+
+            img {
+                background-color: $light-green;
+                width: 100%;
+            }
+
+            .share {
+                position: absolute;
+                bottom: -10rem;
+                left: 0;
+                right: 0;
+                background-color: rgba(0,0,0,0.8);
+                padding: 3rem;
+
+                a {
+                    font-size: 3rem;
+                    margin: 0 1rem;
+                    color: $white;
+
+                    &:hover {
+                        color: $green;
+                    }
+                }
+            }
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            padding-top: 2rem;
+            justify-content: space-between;
+
+            h3 {
+                @include titleText(2rem);
+            }
+
+            span {
+                @include graphText(1.5rem);
+            }
+        }
+    }
+}
+
+.reviews{
+
+    .slide{
+       text-align: center;
+ 
+       p{
+          @include graphText(1.5rem);
+          position: relative;
+          background: $light-green;
+          border:$border;
+          margin-bottom: 3rem;
+          padding:2rem;
+ 
+          &::before{
+             content: '';
+             position: absolute;
+             bottom:-1.2rem; left:50%;
+             transform: translateX(-50%) rotate(45deg);
+             background: $light-green;
+             border-bottom: $border;
+             border-right: $border;
+             height: 2rem;
+             width: 2rem;
+          }
+       }
+ 
+       img{
+          height: 7rem;
+          width: 7rem;
+          border-radius: 50%;
+       }
+ 
+       h3{
+          @include titleText(2.2rem);
+          padding:.5rem 0;
+       }
+ 
+       .stars{
+          font-size: 1.2rem;
+          color:$green;
+       }
+    }
+ }
+
+

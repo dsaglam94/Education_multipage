@@ -1,0 +1,15 @@
+{
+  "name": "education-website",
+  "version": "1.0.0",
+  "description": "It's a tutorial website made for a case-study and SCSS organizing style sheets for multisite practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Dogan Saglam (Dawn)",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.50.0"
+  }
+}
