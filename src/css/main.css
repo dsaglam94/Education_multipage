@@ -166,13 +166,13 @@
   padding: 1rem 0;
 }
 .home .slide-1 {
-  background-image: url("../images/home-slide-1.jpg");
+  background-image: url("./images/home-slide-1.jpg");
 }
 .home .slide-2 {
-  background-image: url("../images/home-slide-2.jpg");
+  background-image: url("../../images/home-slide-2.jpg");
 }
 .home .slide-3 {
-  background-image: url("../images/home-slide-3.jpg");
+  background-image: url("../.images/home-slide-3.jpg");
 }
 .home .swiper-pagination-bullet-active {
   background-color: #0eb582;
